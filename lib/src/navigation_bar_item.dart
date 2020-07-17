@@ -41,13 +41,10 @@ class NavigationBarItem extends StatelessWidget {
           child: InkWell(
             child: Transform.scale(
               scale: isActive ? iconScale : 1,
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: ImageIcon(
-                  AssetImage(iconData),
-                  color: isActive ? activeColor : inactiveColor,
-                  size: iconSize,
-                ),
+              child: ImageIcon(
+                AssetImage(iconData),
+                color: isActive ? activeColor : inactiveColor,
+                size: 3,
               ),
               // child: Icon(
               //   iconData,
