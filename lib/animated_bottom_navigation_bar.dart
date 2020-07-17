@@ -10,7 +10,7 @@ import 'src/exceptions.dart';
 
 class AnimatedBottomNavigationBar extends StatefulWidget {
   /// Icon data to render in the tab bar.
-  final List<IconData> icons;
+  final List icons;
 
   /// Handler which is passed every updated active index.
   final Function(int) onTap;
