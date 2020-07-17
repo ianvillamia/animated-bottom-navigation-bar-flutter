@@ -84,7 +84,7 @@ class AnimatedBottomNavigationBar extends StatefulWidget {
     this.notchAndCornersAnimation,
     this.leftCornerRadius = 0,
     this.rightCornerRadius = 0,
-    this.iconSize = 24,
+    this.iconSize = 12,
     this.notchSmoothness = NotchSmoothness.softEdge,
     this.gapLocation = GapLocation.none,
     this.gapWidth = 72,
