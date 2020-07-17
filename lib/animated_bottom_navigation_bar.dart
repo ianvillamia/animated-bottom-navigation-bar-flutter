@@ -89,7 +89,6 @@ class AnimatedBottomNavigationBar extends StatefulWidget {
     this.gapLocation = GapLocation.none,
     this.gapWidth = 72,
   })  : assert(icons != null),
-        assert(icons.length >= 2 && icons.length <= 5),
         assert(activeIndex != null),
         assert(onTap != null),
         super(key: key) {
@@ -98,12 +97,6 @@ class AnimatedBottomNavigationBar extends StatefulWidget {
         throw NonAppropriatePathException(
             'RightCornerRadius along with ${GapLocation.end} or/and ${FloatingActionButtonLocation.endDocked} causes render issue => '
             'consider set rightCornerRadius to 0.');
-    }
-    if (gapLocation == GapLocation.center) {
-      if (icons.length % 2 != 0)
-        throw NonAppropriatePathException(
-            'Odd count of icons along with $gapLocation causes render issue => '
-            'consider set gapLocation to ${GapLocation.end}');
     }
   }
 
